@@ -1,1 +1,54 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-color: green;
+}
+
+.playing-card {
+  background-color: white;
+  width: 600px;
+  height: 800px;
+  border-radius: 5%;
+  margin: 10px auto;
+  display: flex;
+  position: relative;
+  box-shadow: 10px 5px black;
+}
+
+.card-top-corner,
+.card-bottom-corner {
+  position: absolute;
+  font-size: 100px;
+  width: 100px;
+  height: 100px;
+}
+
+.card-top-corner {
+  top: 20px;
+  left: 20px;
+  justify-content: center;
+  display: flex;
+}
+
+.card-bottom-corner {
+  bottom: 20px;
+  right: 20px;
+  justify-content: center;
+  display: flex;
+  transform: rotate(180deg);
+}
+
+.card-center {
+  font-size: 100px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-generator-button {
+  font-size: 50px;
+}
